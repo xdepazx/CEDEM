@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>CEDEM</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/style.scss" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <meta property="og:title" content="CEDEM" />
+  <meta property="og:description" content="Descripcion" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:updated_time" content="" />
+</head>
+<body>
+  <!-- navigation -->
+
+  <nav class="navbar" style="background-color: #0D231E; height: 60px; padding-top: 10px;">
+    <div class="container">
+         <table style="border: hidden">
+            <tr>
+            <td style="border: hidden"><a href="https://www.gob.mx"  title="Ir a la página inicial" style="background-color: #0D231E" ><img src="gob/gobmxlogo-1.svg" alt="gob.mx" width="120" height="40" class="img-responsive"></a></td>
+    <td width="700px"></td>
+            <td width="80px" style="border: hidden"><a href="https://www.gob.mx/tramites"  title="Trámites" style="color: #ffffff" >Trámites</a></td>
+            <td width="80px" style="border: hidden"><a href="https://www.gob.mx/gobierno"  title="Gobierno" style="color: #ffffff">Gobierno</a></td>
+            <td>
+               <form accept-charset="UTF-8" action="https://www.gob.mx/busqueda" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+                        <input type="hidden" name="site" value="conade">
+                        <button type="submit" class="btn btn-search" title="buscar" value="buscar" style="color: #ffffff">
+                            <img alt="Búsqueda" class="optical-adjust-search" height="20px" src="gob/search-light.svg" width="20px">
+                        </button>
+            </form>          
+            </td>
+            </tr>
+                </table>
+    </div>
+  </nav>
+
+  <header class="header_section">
+      
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <ul class="nav-tabs">
+                
+              <div class="vertical-tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  
+                  <li role="presentation"><a href="index.html" aria-controls="messages" role="tab">Inicio</a></li>
+                    <li role="presentation"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Acerca de <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg></a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Modalidades <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg></a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="home" role="tab" data-toggle="tab">Normatividad y Anexos<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg></a></li>
+                    <li role="presentation"><a href="#Section4" aria-controls="profile" role="tab" data-toggle="tab">Apoyos y Sinergias</a></li>
+                    <li role="presentation"><a href="galeria.html" aria-controls="messages" role="tab">Fotografías</a></li>
+                    <li role="presentation"><a href="contacto.html" aria-controls="messages" role="tab">Directorio</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade" id="Section1">
+                        <h3>Acerca de</h3>
+                        <h4><a href="introduccion.html">Introducción</a></h4>
+                        <h4><a href="objetivo.html">Objetivo</a></h4>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Modalidades</h3>
+                        <h4><a href="mod-1.html">Deporte para todos</a></h4>
+                        <h4><a href="mod-2.html">Deporte de iniciación y formación</a></h4>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h3>Normatividad</h3>
+                        <h4><a href="reglas.html">Reglas de operación</a></h4>
+                        <h4><a href="manual.html">Manual de Operación</a></h4>
+                        <h4><a href="anexos.html">Anexos</a></h4>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section4">
+                      <h3>Apoyos</h3>
+                      <h4><a href="apoyos.html">Tipos de Apoyos</a></h4>
+                      <h4><a href="vinculacion.html">Vinculación</a></h4>
+                  </div>
+                </div>
+            </div>
+            </ul>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            <img src="./images/logo-cedem.svg" alt="" class="img-fluid logo-nav">
+          </span>
+        </a>
+         <div class="user_option">
+          <div class="px-2">
+            <a href="https://twitter.com/CONADE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+            </a>
+          </div>
+          <a href="https://www.facebook.com/CONADE.oficial/?locale=es_LA" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+<!-- /navigation -->
+
+
+<!-- start of banner -->
+<div class="banner text-center">
+  <img src="./images/banner-CEDEM24.png" alt="banner-CEDEM24" class="img-fluid banner-cedem d-none d-md-block">
+  <img src="./images/banner-mobile-CEDEM24.png" alt="" class="img-fluid mobile-banner d-md-none">
+</div>
+<!-- end of banner -->
+
+<!-- start of arrow -->
+<div class="container-arrow d-sm-none">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+</div>
+<!-- end of arrow -->
+
+<div class="container mb-5" >
+  <h3 class="text-center">Nuestro objetivo es contribuir al fomento de la práctica del deporte social de manera sistemática e incluyente que permita desarrollar hábitos saludables en la población.</h3>
+<div class="row mt-5 text-center">
+  <svg class="banner-border" height="240" viewBox="0 0 2202 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M1 123.043C67.2858 167.865 259.022 257.325 549.762 188.784C764.181 125.427 967.75 112.601 1200.42 169.707C1347.76 205.869 1901.91 374.562 2201 1"
+      stroke-width="2" />
+  </svg> 
+  <div class="col-md-6 ">
+    <div class="fig-mod">
+      <a href="./mod-1.html">
+      <div class="circulo-w">
+      <p>Modalidad <br><span class="texto-verde">Deporte para todos</span></p>
+      <br>
+      <div class="btn-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16" style="
+        vertical-align: -1.25em;">
+  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+</svg>
+      </div>
+    </div>
+  </a>
+    </div>
+  </div>
+  <div class="col-md-6 pt-4 pt-lg-0">
+    <div class="fig-mod">
+      <a href="./mod-2.html">
+      <div class="circulo-w2">
+      <p>Modalidad<br><span class="texto-verde">  Deporte de iniciación y formación</span></p>
+      <div class="btn-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16" style="
+        vertical-align: -1.25em;">
+        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+        </svg>
+      </div>
+      </div>
+     </a>
+    </div>
+  </div>
+  
+</div>
+  <div class="col-12 pt-4">
+    <div class="border-bottom border-default"></div>
+  </div>
+</div>
+
+<!-- Manual -->
+<div class="pt-4">
+  <a href="./documentos/Manual CEDEM-OK 2024 LoRes.pdf"  target="_blank">
+  <img src="./images/Banner_Manual.png" alt="" class="img-fluid" loading="lazy">
+  </a>  
+</div>
+
+<!-- Videos -->
+
+<section class="section" >
+  <div class="balones-bg">
+    <img src="./images/pngs/basquet.png" alt="basquet" class="img-fluid bounce balones-1">
+  </div>
+  <!-- Videos opc 1 -->
+  <div class="container mt-lg-5">
+    <div class="row ">
+      <div class="col-lg-8">
+        <div class="p-4 text-center">
+          <h3 style="font-weight: 400; line-height: 1;"><i>SECCIÓN DE</i><br>
+            <span style="font-weight: 700; color: #8FC266; font-size: 38px;">VIDEOS</span></h3>
+            <br>
+            <div class="video-wrapper">
+              <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/ZArNjhhp0dU?si=m4W-ZABEwm0_Rckz&controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+                <a href="#" class="play-btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/ZArNjhhp0dU?si=m4W-ZABEwm0_Rckz&controls=0" data-target="#myModal">
+                <i class="ti-control-play"></i>
+                </a>
+                
+            </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4">
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota19.png" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title ">Expo Iniciación Deportiva 2023</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                  <a href="#">
+                    <button class="ver-btn">
+                      Ver
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota18.jpg" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title">Exposición de Iniciación Deportiva</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                  <a href="#">
+                    <button class="ver-btn">
+                      Ver
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota17.jpg" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title">Instituto Chihuahuense</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                    <button class="ver-btn">
+                      <a href="#">
+                      Ver
+                      </a>
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota19.png" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title">Instituto Chihuahuense</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                  <a href="#">
+                    <button class="ver-btn">
+                      Ver
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <!-- Videos opc 1 END -->
+  <div class="balones-bg">
+    <img src="./images/pngs/futbol.png" alt="basquet" class="img-fluid bounce balones-2" loading="lazy">
+  </div>
+</section>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content border-0 bg-transparent">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fotografías -->
+<section class="section wave-gray">
+  <img src="images/backgrounds/wave-bg.svg" class="wave-bg">
+
+<div class="instafeed" >
+  <div class="container">
+    <h3 class="section-title">Galería</h3>
+  </div>
+  <div class="instagram-slider">
+    <div class="instagram-post"><img src="images/galeria/badminton01.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/badminton02.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/badminton03.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/badminton04.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/badminton05.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/halterofilia01.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/halterofilia02.png" loading="lazy"></div>
+    <div class="instagram-post"><img src="images/galeria/halterofilia03.png" loading="lazy"></div>
+  </div>
+</div>
+<div class="d-flex justify-content-center py-3">
+  <li class="list-inline-item mb-0">
+    <a href="./galeria.html">
+      <button class="ver-btn">
+        Ver más
+        <span class="blob-btn__inner">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+          </span>
+        </span>
+      </button>
+    </a>
+  </li>
+</div>
+</section>
+
+<!-- Noticias -->
+<section class="py-5">
+  <div class="container">
+    <h3 class="section-title">Noticias</h3>
+    <div class="row">
+      <div class="col-lg-4 mb-5">
+        
+        <article class="card">
+          <div class="post-slider slider-sm">
+            <img src="images/noticias/nota20.png" class="card-img-top" alt="post-thumb" style="max-height: 170px;object-fit: cover;object-position: top;width: 350px;" loading="lazy">
+          </div>
+          
+          <div class="card-body">
+            <h3 class="h4 mb-3 text-truncate"><a class="post-title" href="#">CONADE-CEDEM entrega material deportivo en Estado de México</a></h3>
+            <ul class="card-meta list-inline">
+              <li class="list-inline-item">
+                <i class="ti-calendar"></i>21 de enero, 2024
+              </li>
+            </ul>
+            <p>El equipamiento beneficiará a 32 centros deportivos infantiles ...</p>
+            <a href="#">
+                <button class="blob-btn">
+                  Leer más
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+            </a>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 mb-5">
+        
+        <article class="card">
+          <div class="post-slider slider-sm">
+            <img src="images/noticias/nota17.jpg" class="card-img-top" alt="post-thumb" style="max-height: 170px;object-fit: cover;object-position: top;width: 350px;">
+          </div>
+          <div class="card-body">
+            <h3 class="h4 mb-3 text-truncate"><a class="post-title" href="post-details.html">Inauguran CONADE y el Instituto Chihuahuense del Deporte</a></h3>
+            <ul class="card-meta list-inline">
+              <li class="list-inline-item">
+                <i class="ti-calendar"></i>15 de noviembre, 2019
+              </li>
+            </ul>
+            <p>La Comisión Nacional de Cultura Física y Deporte (Conade), los ...</p>
+            <a href="#">
+              <button class="blob-btn">
+                Leer más
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4">
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota19.png" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title">Expo Iniciación Deportiva 2023</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                  <i class="ti-calendar"></i>7 de noviembre, 2023
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota18.jpg" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title">Exposición de Iniciación Deportiva</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                  <i class="ti-calendar"></i>15 de noviembre, 2019
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/noticias/nota17.jpg" loading="lazy">
+            <div class="ml-3">
+              <h4 class="d-inline-block text-truncate" style="max-width: 150px;"><a href="post-details.html" class="post-title">Instituto Chihuahuense del Deporte</a></h4>
+              <ul class="card-meta list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                  <i class="ti-calendar"></i>15 noviembre, 2019
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12">
+        <div class="border-bottom border-default"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sistemas -->
+
+<section class="pb-5">
+  
+  <div class="container">
+    <h3 class="section-title">Sistemas</h3>
+    <div class="row text-center">
+      <div class="col-lg-6 mb-5">
+        <div class="guante-sis">
+          <img src="./images/pngs/guante.png" alt="guante" class="img-fluid guante-png" loading="lazy">
+        </div>
+        <a href="https://renacedem.conade.gob.mx/Account/LogOn?ReturnUrl=%2f" target="_blank">
+          <img src="./images/sistemas/renacedem.png" alt="renacedem" class="img-fluid btn-consulta" style="max-width: 250px;" loading="lazy">
+        </a>
+      </div>
+      <div class="col-lg-6 mb-5">
+        <a href="https://sicr.conade.gob.mx/system/acceso.aspx" target="_blank">
+          <img src="./images/sistemas/sicr.png" alt="sicr" class="img-fluid btn-consulta" style="max-width: 250px;" loading="lazy">
+        </a>
+        <div class="guante-sis">
+          <img src="./images/pngs/americano-3.png" alt="personaje" class="img-fluid balones-sis">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="border-bottom border-default"></div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<footer class="footer">
+  <svg class="footer-border" height="214" viewBox="0 0 2204 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2203 213C2136.58 157.994 1942.77 -33.1996 1633.1 53.0486C1414.13 114.038 1200.92 188.208 967.765 118.127C820.12 73.7483 263.977 -143.754 0.999958 158.899"
+    stroke-width="2" />
+  </svg>
+  <div class="container">
+      <div class="row align-items-center">
+      
+      <div class="col-md-12 text-center mb-4">
+        <p>&copy; <span id="displayYear"></span> | Algunos Derechos Reservados </p>
+          <a href="index.html"><img class="img-fluid" width="300px" src="images/logo-cedem.svg" alt="CEDEM"></a>
+      </div>
+      <div class="col-12">
+          <div class="border-bottom border-default"></div>
+      </div>
+      </div>
+  </div>
+  </footer>
+
+  <!-- Footer GOB -->
+  <section data-v-58f74857="" data-v-a9e74452="" class="panel-footer" style="color: #fff; padding-top: 10px; background-color: #0D231E"><br><br><div data-v-58f74857="" class="container"><div data-v-58f74857="" class="row" ><div data-v-58f74857="" class="col-sm-6 col-lg-3"><img data-v-58f74857="" src="https://framework-gb.cdn.gob.mx/landing/img/logofooter.png" href="/" alt="logo gobierno de méxico" class="logo_footer" style="max-width: 90%; margin-left: -6%; margin-top: 22%;"></div><div data-v-58f74857="" class="col-sm-6 col-lg-3"><h6 data-v-58f74857="" align="left" id="division" style="color: #fff">Enlaces</h6><ul data-v-58f74857="" class="list-unstyled" ><li data-v-58f74857="" ><a data-v-58f74857="" href="http://www.participa.gob.mx" target="_blank" style="color: #fff"> Participa</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/publicaciones" target="_blank" style="color: #fff">Publicaciones Oficiales</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="http://www.ordenjuridico.gob.mx" target="_blank" style="color: #fff">Marco Jurídico</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://consultapublicamx.inai.org.mx/vut-web/" target="_blank" style="color: #fff">Plataforma Nacional de Transparencia</a></li></ul></div><div data-v-58f74857="" class="col-sm-6 col-lg-3"><h6 data-v-58f74857="" align="left" id="division" style="color: #fff">¿Qué es gob.mx?</h6><p data-v-58f74857="" style="color: #fff" align="left">Es el portal único de trámites, información y participación ciudadana. <a data-v-58f74857="" href="https://www.gob.mx/que-es-gobmx"><u data-v-58f74857="" style="color: #fff">Leer más</u></a></p><ul data-v-58f74857="" class="list-unstyled"><li data-v-58f74857=""><a data-v-58f74857="" href="https://datos.gob.mx" style="color: #fff">Portal de datos abiertos</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/accesibilidad" style="color: #fff">Declaración de accesibilidad</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/privacidadintegral" style="color: #fff">Aviso  de privacidad integral</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/privacidadsimplificado" style="color: #fff">Aviso de privacidad simplificado</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/terminos" style="color: #fff">Términos y condiciones</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/terminos#0D231E231E231Edidas-seguridad-informacion" style="color: #fff">Política de seguridad</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/sitemap" style="color: #fff">Mapa del sitio</a></li></ul></div><div data-v-58f74857="" class="col-sm-6 col-lg-3"><h6 data-v-58f74857="" align="left" id="division"></h6><h6 data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54"><u data-v-58f74857="" style="color:#fff" >Denuncia contra servidores públicos</u></a></h6><br data-v-58f74857=""><h6 data-v-58f74857="" id="redes" style="color: #fff">Síguenos en:</h6><ul data-v-58f74857="" id="social" class="list-inline"><li data-v-58f74857="" class="list-inline-item"><a data-v-58f74857="" href="https://www.facebook.com/gobmexico/" target="_blank" red="Facebook" title="Enlace a facebook abre en una nueva ventana" class="sendEstFooterRs share-info"><img data-v-58f74857="" alt="Facebook" src="https://framework-gb.cdn.gob.mx/landing/img/facebook.png"></a></li><li data-v-58f74857="" class="list-inline-item"><a data-v-58f74857="" href="https://twitter.com/GobiernoMX" target="_blank" red="Twitter" title="Enlace a twitter abre en una nueva ventana" class="sendEstFooterRs share-info"><img data-v-58f74857="" alt="Twitter" src="https://framework-gb.cdn.gob.mx/landing/img/twitter.png"></a></li></ul></div></div></div><div data-v-58f74857="" class="container-fluid footer-pleca"><div data-v-58f74857="" class="row"><div data-v-58f74857="" class="column"><br data-v-58f74857=""><br data-v-58f74857=""><br data-v-58f74857=""></div></div></div>
+</section>
+
+
+  <!-- JS Plugins -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="plugins/jQuery/jquery.min.js"></script>
+
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <script src="plugins/slick/slick.min.js"></script>
+
+  <script src="plugins/instafeed/instafeed.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script></body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>CEDEM</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="" />
+
+  <!-- plugins -->
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/style.scss" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <meta property="og:title" content="CEDEM" />
+  <meta property="og:description" content="Descripcion" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:updated_time" content="" />
+</head>
+<body>
+<!-- GOB NAV -->
+<nav class="navbar" style="background-color: #0D231E; height: 60px; padding-top: 10px;">
+  <div class="container">
+       <table style="border: hidden">
+          <tr>
+          <td style="border: hidden"><a href="https://www.gob.mx"  title="Ir a la página inicial" style="background-color: #0D231E" ><img src="gob/gobmxlogo-1.svg" alt="gob.mx" width="120" height="40" class="img-responsive"></a></td>
+  <td width="700px"></td>
+          <td width="80px" style="border: hidden"><a href="https://www.gob.mx/tramites"  title="Trámites" style="color: #ffffff" >Trámites</a></td>
+          <td width="80px" style="border: hidden"><a href="https://www.gob.mx/gobierno"  title="Gobierno" style="color: #ffffff">Gobierno</a></td>
+          <td>
+             <form accept-charset="UTF-8" action="https://www.gob.mx/busqueda" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+                      <input type="hidden" name="site" value="conade">
+                      <button type="submit" class="btn btn-search" title="buscar" value="buscar" style="color: #ffffff">
+                          <img alt="Búsqueda" class="optical-adjust-search" height="20px" src="gob/search-light.svg" width="20px">
+                      </button>
+          </form>          
+          </td>
+          </tr>
+              </table>
+  </div>
+</nav>
+
+  <!-- navigation -->
+  <header class="header_section">
+      
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <ul class="nav-tabs">
+                
+              <div class="vertical-tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    
+                  <li role="presentation"><a href="index.html" aria-controls="inicio" role="tab">Inicio</a></li>
+                    <li role="presentation"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Acerca de <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg></a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Modalidades <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg></a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="home" role="tab" data-toggle="tab">Normatividad y Anexos<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg></a></li>
+                    <li role="presentation"><a href="apoyo.html" aria-controls="profile" role="tab" data-toggle="tab">Apoyos y Sinergias</a></li>
+                    <li role="presentation"><a href="galeria.html" aria-controls="messages" role="tab">Fotografías</a></li>
+                    <li role="presentation"><a href="contacto.html" aria-controls="messages" role="tab">Directorio</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade" id="Section1">
+                        <h3>Acerca de</h3>
+                        <h4><a href="introduccion.html">Introducción</a></h4>
+                        <h4><a href="objetivo.html">Objetivo</a></h4>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Modalidades</h3>
+                        <h4><a href="mod-1.html">Deporte para todos</a></h4>
+                        <h4><a href="mod-2.html">Deporte de iniciación y formación</a></h4>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h3>Normatividad</h3>
+                        <h4><a href="reglas.html">Reglas de operación</a></h4>
+                        <h4><a href="manual.html">Manual de Operación</a></h4>
+                        <h4><a href="anexos.html">Anexos</a></h4>
+                    </div>
+                </div>
+            </div>
+            </ul>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            <img src="./images/logo-cedem.svg" alt="" class="img-fluid logo-nav">
+          </span>
+        </a>
+         <div class="user_option">
+          <div class="px-2">
+            <a href="https://twitter.com/CONADE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg>
+            </a>
+          </div>
+          <a href="https://www.facebook.com/CONADE.oficial/?locale=es_LA" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+<!-- /navigation -->
+
+<div class="header text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <h1 class="mb-4">Noticias</h1>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-default" href="index.html">Inicio
+              &nbsp; &nbsp;/</a></li>
+          <li class="list-inline-item text-primary">Noticias</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  <svg class="header-border" height="240" viewBox="0 0 2202 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M1 123.043C67.2858 167.865 259.022 257.325 549.762 188.784C764.181 125.427 967.75 112.601 1200.42 169.707C1347.76 205.869 1901.91 374.562 2201 1"
+      stroke-width="2" />
+  </svg>
+</div>
+
+<section class="section">
+    <div class="py-4"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8  mb-5 mb-lg-0">
+          <ul id="paginated-list" data-current-page="1" aria-live="polite">
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota6.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Capacitación y Certificación de entrenadores, Morelos</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>En las Instalaciones del Estadio Centenario en Cuernavaca, Morelos, en coordinación con el Instituto del Deporte y Cultura del Estado de Morelos como parte de la modalidad de...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota7.jpg" class="card-img-top" alt="post-thumb">
+              </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Carrera Ciclista Juvenil CEDEM: “Vuelta Panorámica”</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>28 de Agosto de 2018
+                    </li>
+                  </ul>
+                  <p>La CONADE a través de la línea de acción de Centros del Deporte Escolar y Municipal en coordinación con el Instituto Sudcaliforniano del Deporte (INSUDE) y...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <div class="card-img-top" >
+                    <iframe width="100%" height="550" src="https://www.youtube.com/embed/TYtdhbHE4M8?si=LxWz5pe6FsGkzXZD&rel=0" title="CEDEM - CONADE" frameborder="0"  allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post/post-1/">Inclusión al Deporte de Casas hogares y Centros de Rehabilitación del DIF</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>Trabajando la CONADE en sinergia con el DIF Nacional (a través de las casas asistenciales y geriátricos), SEP (Centros de Atención Múltiple CAM) y la línea de acción Centros del Deporte Escolar y Municipal...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota6.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Capacitación y Certificación de entrenadores, Morelos</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>En las Instalaciones del Estadio Centenario en Cuernavaca, Morelos, en coordinación con el Instituto del Deporte y Cultura del Estado de Morelos como parte de la modalidad de...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota7.jpg" class="card-img-top" alt="post-thumb">
+              </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Carrera Ciclista Juvenil CEDEM: “Vuelta Panorámica”</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>28 de Agosto de 2018
+                    </li>
+                  </ul>
+                  <p>La CONADE a través de la línea de acción de Centros del Deporte Escolar y Municipal en coordinación con el Instituto Sudcaliforniano del Deporte (INSUDE) y...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <div class="card-img-top" >
+                    <iframe width="100%" height="550" src="https://www.youtube.com/embed/TYtdhbHE4M8?si=LxWz5pe6FsGkzXZD&rel=0" title="CEDEM - CONADE" frameborder="0"  allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post/post-1/">Inclusión al Deporte de Casas hogares y Centros de Rehabilitación del DIF</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>Trabajando la CONADE en sinergia con el DIF Nacional (a través de las casas asistenciales y geriátricos), SEP (Centros de Atención Múltiple CAM) y la línea de acción Centros del Deporte Escolar y Municipal...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota6.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Capacitación y Certificación de entrenadores, Morelos</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>En las Instalaciones del Estadio Centenario en Cuernavaca, Morelos, en coordinación con el Instituto del Deporte y Cultura del Estado de Morelos como parte de la modalidad de...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota7.jpg" class="card-img-top" alt="post-thumb">
+              </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Carrera Ciclista Juvenil CEDEM: “Vuelta Panorámica”</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>28 de Agosto de 2018
+                    </li>
+                  </ul>
+                  <p>La CONADE a través de la línea de acción de Centros del Deporte Escolar y Municipal en coordinación con el Instituto Sudcaliforniano del Deporte (INSUDE) y...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <div class="card-img-top" >
+                    <iframe width="100%" height="550" src="https://www.youtube.com/embed/TYtdhbHE4M8?si=LxWz5pe6FsGkzXZD&rel=0" title="CEDEM - CONADE" frameborder="0"  allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post/post-1/">Inclusión al Deporte de Casas hogares y Centros de Rehabilitación del DIF</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>Trabajando la CONADE en sinergia con el DIF Nacional (a través de las casas asistenciales y geriátricos), SEP (Centros de Atención Múltiple CAM) y la línea de acción Centros del Deporte Escolar y Municipal...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota6.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Capacitación y Certificación de entrenadores, Morelos</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>En las Instalaciones del Estadio Centenario en Cuernavaca, Morelos, en coordinación con el Instituto del Deporte y Cultura del Estado de Morelos como parte de la modalidad de...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <img src="images/galeria/nota7.jpg" class="card-img-top" alt="post-thumb">
+              </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post-details.html">Carrera Ciclista Juvenil CEDEM: “Vuelta Panorámica”</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>28 de Agosto de 2018
+                    </li>
+                  </ul>
+                  <p>La CONADE a través de la línea de acción de Centros del Deporte Escolar y Municipal en coordinación con el Instituto Sudcaliforniano del Deporte (INSUDE) y...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card mb-4">
+                <div class="post-slider">
+                  <div class="card-img-top" >
+                    <iframe width="100%" height="550" src="https://www.youtube.com/embed/TYtdhbHE4M8?si=LxWz5pe6FsGkzXZD&rel=0" title="CEDEM - CONADE" frameborder="0"  allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="mb-3"><a class="post-title" href="post/post-1/">Pag2-3 al Deporte de Casas hogares y Centros de Rehabilitación del DIF</a></h3>
+                  <ul class="card-meta list-inline">
+                    <li class="list-inline-item">
+                      <i class="ti-calendar"></i>2 de febrero de 2024
+                    </li>
+                  </ul>
+                  <p>Trabajando la CONADE en sinergia con el DIF Nacional (a través de las casas asistenciales y geriátricos), SEP (Centros de Atención Múltiple CAM) y la línea de acción Centros del Deporte Escolar y Municipal...</p>
+                  <a href="#">
+                    <button class="blob-btn">
+                      Leer más
+                      <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                          <span class="blob-btn__blob"></span>
+                        </span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <nav class="pagination-container">
+            <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+              &lt;
+            </button>
+        
+            <div id="pagination-numbers">
+        
+            </div>
+        
+            <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+              &gt;
+            </button>
+          </nav>
+        </div>
+  <!-- Aside Start-->
+        <aside class="col-lg-4 ">
+  
+    <div class="widget">
+      <h4 class="widget-title">Noticias relevantes</h4>
+  
+      <!-- post-item -->
+      <article class="widget-card">
+        <div class="d-flex">
+          <img class="card-img-sm" src="images/galeria/20231126_103053.jpg">
+          <div class="ml-3">
+            <h5><a class="post-title" href="post/elements/">Torneo de Box “Chinelo de Oro”</a></h5>
+            <ul class="card-meta list-inline mb-0">
+              <li class="list-inline-item mb-0">
+                <i class="ti-calendar"></i>15 de febrero de 2020
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      
+      <article class="widget-card">
+        <div class="d-flex">
+          <img class="card-img-sm" src="images/galeria/20230815_092330.jpg">
+          <div class="ml-3">
+            <h5><a class="post-title" href="post-details.html">Feria Integral de Prevención Social</a></h5>
+            <ul class="card-meta list-inline mb-0">
+              <li class="list-inline-item mb-0">
+                <i class="ti-calendar"></i>26 de marzo de 2020
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      
+      <article class="widget-card">
+        <div class="d-flex">
+          <img class="card-img-sm" src="images/galeria/badminton02.png">
+          <div class="ml-3">
+            <h5><a class="post-title" href="post-details.html">Primer Torneo Relámpago</a></h5>
+            <ul class="card-meta list-inline mb-0">
+              <li class="list-inline-item mb-0">
+                <i class="ti-calendar"></i>12 de abril de 2020
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </aside>
+  
+      </div>
+      <!-- 
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item ">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item " aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</a>
+          </li>
+        </ul>
+      </nav> -->
+    </div>
+  </section>
+
+
+<footer class="footer">
+  <svg class="footer-border" height="214" viewBox="0 0 2204 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2203 213C2136.58 157.994 1942.77 -33.1996 1633.1 53.0486C1414.13 114.038 1200.92 188.208 967.765 118.127C820.12 73.7483 263.977 -143.754 0.999958 158.899"
+    stroke-width="2" />
+  </svg>
+  <div class="container">
+      <div class="row align-items-center">
+      
+      <div class="col-md-12 text-center mb-4">
+        <p>&copy; <span id="displayYear"></span> | Algunos Derechos Reservados </p>
+          <a href="index.html"><img class="img-fluid" width="300px" src="images/logo-cedem.svg" alt="CEDEM"></a>
+      </div>
+      <div class="col-12">
+          <div class="border-bottom border-default"></div>
+      </div>
+      </div>
+  </div>
+  </footer>
+  
+<!-- Footer GOB -->
+<section data-v-58f74857="" data-v-a9e74452="" class="panel-footer" style="color: #fff; padding-top: 10px; background-color: #0D231E"><br><br><div data-v-58f74857="" class="container"><div data-v-58f74857="" class="row" ><div data-v-58f74857="" class="col-sm-6 col-lg-3"><img data-v-58f74857="" src="https://framework-gb.cdn.gob.mx/landing/img/logofooter.png" href="/" alt="logo gobierno de méxico" class="logo_footer" style="max-width: 90%; margin-left: -6%; margin-top: 22%;"></div><div data-v-58f74857="" class="col-sm-6 col-lg-3"><h6 data-v-58f74857="" align="left" id="division" style="color: #fff">Enlaces</h6><ul data-v-58f74857="" class="list-unstyled" ><li data-v-58f74857="" ><a data-v-58f74857="" href="http://www.participa.gob.mx" target="_blank" style="color: #fff"> Participa</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/publicaciones" target="_blank" style="color: #fff">Publicaciones Oficiales</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="http://www.ordenjuridico.gob.mx" target="_blank" style="color: #fff">Marco Jurídico</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://consultapublicamx.inai.org.mx/vut-web/" target="_blank" style="color: #fff">Plataforma Nacional de Transparencia</a></li></ul></div><div data-v-58f74857="" class="col-sm-6 col-lg-3"><h6 data-v-58f74857="" align="left" id="division" style="color: #fff">¿Qué es gob.mx?</h6><p data-v-58f74857="" style="color: #fff" align="left">Es el portal único de trámites, información y participación ciudadana. <a data-v-58f74857="" href="https://www.gob.mx/que-es-gobmx"><u data-v-58f74857="" style="color: #fff">Leer más</u></a></p><ul data-v-58f74857="" class="list-unstyled"><li data-v-58f74857=""><a data-v-58f74857="" href="https://datos.gob.mx" style="color: #fff">Portal de datos abiertos</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/accesibilidad" style="color: #fff">Declaración de accesibilidad</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/privacidadintegral" style="color: #fff">Aviso  de privacidad integral</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/privacidadsimplificado" style="color: #fff">Aviso de privacidad simplificado</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/terminos" style="color: #fff">Términos y condiciones</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/terminos#0D231E231E231Edidas-seguridad-informacion" style="color: #fff">Política de seguridad</a></li><li data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/sitemap" style="color: #fff">Mapa del sitio</a></li></ul></div><div data-v-58f74857="" class="col-sm-6 col-lg-3"><h6 data-v-58f74857="" align="left" id="division"></h6><h6 data-v-58f74857=""><a data-v-58f74857="" href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54"><u data-v-58f74857="" style="color:#fff" >Denuncia contra servidores públicos</u></a></h6><br data-v-58f74857=""><h6 data-v-58f74857="" id="redes" style="color: #fff">Síguenos en:</h6><ul data-v-58f74857="" id="social" class="list-inline"><li data-v-58f74857="" class="list-inline-item"><a data-v-58f74857="" href="https://www.facebook.com/gobmexico/" target="_blank" red="Facebook" title="Enlace a facebook abre en una nueva ventana" class="sendEstFooterRs share-info"><img data-v-58f74857="" alt="Facebook" src="https://framework-gb.cdn.gob.mx/landing/img/facebook.png"></a></li><li data-v-58f74857="" class="list-inline-item"><a data-v-58f74857="" href="https://twitter.com/GobiernoMX" target="_blank" red="Twitter" title="Enlace a twitter abre en una nueva ventana" class="sendEstFooterRs share-info"><img data-v-58f74857="" alt="Twitter" src="https://framework-gb.cdn.gob.mx/landing/img/twitter.png"></a></li></ul></div></div></div><div data-v-58f74857="" class="container-fluid footer-pleca"><div data-v-58f74857="" class="row"><div data-v-58f74857="" class="column"><br data-v-58f74857=""><br data-v-58f74857=""><br data-v-58f74857=""></div></div></div>
+</section>
+
+  <!-- JS Plugins -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="plugins/jQuery/jquery.min.js"></script>
+
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <script src="plugins/slick/slick.min.js"></script>
+
+  <script src="plugins/instafeed/instafeed.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script></body>
+</html>
